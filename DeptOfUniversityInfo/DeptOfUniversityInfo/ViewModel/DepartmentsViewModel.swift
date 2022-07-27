@@ -25,14 +25,22 @@ class DepartmentsViewModel:ObservableObject {
                 self?.isError = true
                 return
             }
+            
             do{
-                
                 let res = try JSONDecoder().decode([Departments].self,from:data)
+//                for i in self!.depts{
+//                    self.depts?.append[i.deptName]
+//                    self.depts?.append[i.subjects]
+//                    self.depts?.append[i.numberOfTeachers]
+//                    self.depts?.append[i.numberOfStudents]
+//                    self.depts?.append[i.numberOfPublicationsPerYr]
+//                }
                 DispatchQueue.main.async{
                     //TODO: Still need to sort
                     self?.depts = res
                 }
             }catch{
+                print(self?.depts)
                 print("error decoding")
                 print(error)
                 self?.isError = true
