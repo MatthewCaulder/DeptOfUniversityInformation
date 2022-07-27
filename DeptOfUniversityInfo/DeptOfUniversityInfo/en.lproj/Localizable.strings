@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  DeptOfUniversityInfo
+
+  Created by Matt Caulder on 7/27/22.
+  
+*/
+"Departments" = "Departments: ";
+"Dept Name" = "Dept Name: ";
+"Teachers" = "Teachers: ";
+"Publications" = "Publications: ";
+"LoadingError" = "Error loading data";
